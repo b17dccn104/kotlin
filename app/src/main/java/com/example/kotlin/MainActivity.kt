@@ -8,6 +8,9 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    private val c = 0
+    private val b =1
+    private val a = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -16,14 +19,7 @@ class MainActivity : AppCompatActivity() {
         imageView.setImageResource(R.drawable.caphesua)
 
 
-       button.setOnClickListener {
-           var so1: Int = (sothu1.text.toString()).toInt()
-           var so2: Int = (sothu2.text.toString()).toInt()
-           var ketqua: Int = so1 + so2
-           textView.text = ketqua.toString()
 
-
-       }
 
 //        button.setOnClickListener(object :View.OnClickListener{
 //            override fun onClick(v: View?) {
